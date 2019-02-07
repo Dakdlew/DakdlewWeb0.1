@@ -55,26 +55,24 @@ table {
 h1 {
 	color: Black;
 	font-weight: bold;
-	font-size: 150%%;
+	font-size: 150%;
 	margin-left: 5%;
 	margin: 5%;
 
 }
 
-a {
-	color: blue;
+h3 {
+	font-size:20%;
 
 
 
 }
-a:visited{
-	color:purple;
-}
+
 li{
+	position: relative;
 	font-size: 36%;
 	display: inline-block;
-	position: relative;
-	margin-top: -5%;
+	margin-top: 5%;
 
 }
 p{
@@ -84,6 +82,8 @@ p{
 
 
 nav{
+	display: grid;
+	justify-content: center;
 
 }
 
@@ -94,10 +94,11 @@ color:red;
 .nav{
 	color:white;
 	background-color: black
+
 }
 .nav, .skip:visited{
-	color: orange;
-	background-color:black;
+	color: black;
+	background-color:orange;
 }
 .nav:hover{
 	color: orange;
@@ -121,6 +122,10 @@ color:red;
 .hyli{
 	font-size: 18pt;
 }
+.currentP{
+	background-color: black;
+	color: orange;
+}
 
 /*
 .container{
@@ -137,6 +142,14 @@ img{
 	height: 30%;
 	padding: 10px;
 }
+.prop{
+	width: 45%;
+	height: 45%;
+
+}
+
+
+
 .container{
 	display: flex;
 	flex-wrap: wrap;
@@ -145,4 +158,14 @@ img{
 
 	}
 
+.meTeam{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-left: 5%;
+	justify-content: space-around;
+
+	}
 
