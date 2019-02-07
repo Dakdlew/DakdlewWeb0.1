@@ -1,0 +1,148 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 5;
+	padding: 10;
+	border: 10;
+	font-size: 28pt;
+	line-height: 120%;
+	font-family:Arial, Helvetica, sans-serif ;
+	vertical-align: baseline;
+	color: black;
+
+}
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, section {
+	display: block;
+	background-color: orange;
+	color: white;
+
+}
+body {
+	line-height: 2;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+h1 {
+	color: Black;
+	font-weight: bold;
+	font-size: 150%%;
+	margin-left: 5%;
+	margin: 5%;
+
+}
+
+a {
+	color: blue;
+
+
+
+}
+a:visited{
+	color:purple;
+}
+li{
+	font-size: 36%;
+	display: inline-block;
+	position: relative;
+	margin-top: -5%;
+
+}
+p{
+	font-size: 18pt;
+	margin-left: 5%;
+}
+
+
+nav{
+
+}
+
+
+.home{
+color:red;
+}
+.nav{
+	color:white;
+	background-color: black
+}
+.nav, .skip:visited{
+	color: orange;
+	background-color:black;
+}
+.nav:hover{
+	color: orange;
+	background-color:grey;
+}
+.skip{
+	position: absolute;
+	color:orange;
+	left: -2000px;
+	display: block;
+}
+*:focus{
+	border:1px orange;
+}
+.skip:focus{
+	border:1px solid black;
+	left:80%;
+	top: 100px;
+
+}
+.hyli{
+	font-size: 18pt;
+}
+
+/*
+.container{
+	display:flex;
+
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+
+}*/
+
+img{
+	width: 30%;
+	height: 30%;
+	padding: 10px;
+}
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+
+	}
+
+
