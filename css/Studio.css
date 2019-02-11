@@ -1,66 +1,13 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
-html, body, div, span, applet, object, iframe, 
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 5;
-	padding: 10;
-	border: 10;
-	font-size: 28pt;
-	line-height: 120%;
-	font-family:Arial, Helvetica, sans-serif ;
-	vertical-align: baseline;
-	color: black;
-
-}
-/* HTML5 display-role reset for older browsers */
-
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, section {
-	display: block;
-	background-color: orange;
-	color: white;
-
-}
-body {
-	line-height: 2;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+a{
+	text-decoration: none;
 }
 
-
-h1 {
-	color: Black;
-	font-weight: bold;
-	font-size: 150%;
-	margin-left: 5%;
-	margin: 5%;
-
+html{
+	font-family: "Century Gothic Pro", Gothic, monospace;
+	font-weight: light;
+	background-color:  rgb(248, 242, 242);
 }
-
 h3 {
 	font-size:20%;
 
@@ -75,10 +22,7 @@ li{
 	margin-top: 5%;
 
 }
-p{
-	font-size: 18pt;
-	margin-left: 5%;
-}
+
 
 
 nav{
@@ -91,19 +35,7 @@ nav{
 .home{
 color:red;
 }
-.nav{
-	color:white;
-	background-color: black
 
-}
-.nav, .skip:visited{
-	color: black;
-	background-color:orange;
-}
-.nav:hover{
-	color: orange;
-	background-color:grey;
-}
 .skip{
 	position: absolute;
 	color:orange;
@@ -122,10 +54,7 @@ color:red;
 .hyli{
 	font-size: 18pt;
 }
-.currentP{
-	background-color: black;
-	color: orange;
-}
+
 
 /*
 .container{
@@ -137,7 +66,7 @@ color:red;
 
 }*/
 
-img{
+.projimg{
 	width: 30%;
 	height: 30%;
 	padding: 10px;
@@ -168,4 +97,77 @@ img{
 	justify-content: space-around;
 
 	}
+
+h1 {
+	text-align: center;
+	font-weight: light;
+	font-size: 10vw;
+
+}
+h2 {
+	font-weight: lighter;
+	font-size: 3vw;
+}
+h3 {
+	font-weight: lighter;
+	font-size: 2vw;
+}
+img{
+	padding: 1vw;
+}
+p{
+	font-weight: lighter;
+	font-size: 2vw;
+}
+.stnd{
+	position: relative;
+	margin: 7%;
+}
+.projs{
+	font-size: 2.4vw;
+}
+.nav, .currentP{
+	display: flex;
+	font-weight: bolder;
+	font-size: 3vw;
+	color:black;
+	text-decoration: none;
+	padding: 1.5vw;
+
+}
+.nav:hover{
+	color: white;
+	background-color:rgb(38, 35, 53);
+}
+.currentP{
+	color: #ea0b00;
+}
+
+.home{
+	position: fixed;
+	left:-40%;
+	height: 100%;
+	width: 180%;
+	
+}
+
+.hometext{
+
+	display: grid;
+	position:relative;
+	bottom: -33vh;
+	color:white;
+
+}
+
+.atex{
+	text-align: center;
+	font-weight: bolder;
+	font-size: 3vw;
+}
+
+.typetext{
+	font-weight: bolder;
+	font-size: 3vw;
+}
 
