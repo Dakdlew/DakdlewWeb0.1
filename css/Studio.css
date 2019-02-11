@@ -4,7 +4,7 @@ a{
 }
 
 html{
-	font-family: "Century Gothic Pro", Gothic, monospace;
+	font-family: century-gothic, sans-serif;
 	font-weight: light;
 	background-color:  rgb(248, 242, 242);
 }
