@@ -95,6 +95,7 @@ color:red;
 	flex-wrap: wrap;
 	margin-left: 5%;
 	justify-content: space-around;
+	text-align: center;
 
 	}
 
@@ -168,6 +169,16 @@ p{
 
 .typetext{
 	font-weight: bolder;
-	font-size: 3vw;
+	font-size: 2.5vw;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.25fr 1fr 0.75fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: ". . ." ". . ." ". . ." ". . ." ". . ." ". . .";
+  font-size: 2vw;
+}
+div{
+	padding: 0.4vw;
+}
