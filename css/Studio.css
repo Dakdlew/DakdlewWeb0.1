@@ -1,103 +1,28 @@
-
-a{
-	text-decoration: none;
-}
-
 html{
 	font-family: century-gothic, sans-serif;
 	font-weight: light;
 	background-color:  rgb(248, 242, 242);
 }
-h3 {
-	font-size:20%;
 
 
-
+nav{
+	display: grid;
+	justify-content: center;
 }
+
 
 li{
 	position: relative;
-	font-size: 36%;
 	display: inline-block;
 	margin-top: 5%;
 
 }
 
 
-
-nav{
-	display: grid;
-	justify-content: center;
-
-}
-
-
-.home{
-color:red;
-}
-
-.skip{
-	position: absolute;
-	color:orange;
-	left: -2000px;
-	display: block;
-}
 *:focus{
 	border:1px orange;
 }
-.skip:focus{
-	border:1px solid black;
-	left:80%;
-	top: 100px;
 
-}
-.hyli{
-	font-size: 18pt;
-}
-
-
-/*
-.container{
-	display:flex;
-
-	flex-wrap: wrap;
-	align-content: center;
-	justify-content: center;
-
-}*/
-
-.projimg{
-	width: 30%;
-	height: 30%;
-	padding: 10px;
-}
-.prop{
-	width: 45%;
-	height: 45%;
-
-}
-
-
-
-.container{
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-
-	}
-
-.meTeam{
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
-	flex-direction: row;
-	flex-wrap: wrap;
-	margin-left: 5%;
-	justify-content: space-around;
-	text-align: center;
-
-	}
 
 h1 {
 	text-align: center;
@@ -120,6 +45,84 @@ p{
 	font-weight: lighter;
 	font-size: 2vw;
 }
+a{
+	text-decoration: none;
+}
+
+h3 {
+	font-size:20%;
+}
+
+div{
+	padding: 0.4vw;
+}
+
+
+
+.skip{
+	position: absolute;
+	color:orange;
+	left: -2000px;
+	display: block;
+}
+
+.skip:focus{
+	border:1px solid black;
+	font-size: 2vw;
+	left:0%;
+	top: 10px;
+
+}
+
+.fancy{
+    color: green;
+    font-size: 12px;
+}
+
+.plain{
+   color: black;
+   font-size: 16px;
+
+}
+
+.hyli{
+	font-size: 18pt;
+}
+
+
+
+.prop{
+	width: 45%;
+	height: 45%;
+
+}
+
+label{
+	display: block;
+	padding: 1vh;
+}
+
+textarea{
+	margin: 20px;
+	display: block;
+}
+
+
+}
+
+
+.meTeam{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-left: 5%;
+	justify-content: space-around;
+	text-align: center;
+
+	}
+
 .stnd{
 	position: relative;
 	margin: 7%;
@@ -130,7 +133,8 @@ p{
 .nav, .currentP{
 	display: flex;
 	font-weight: bolder;
-	font-size: 3vw;
+	font-size: 2vw;
+	font-size-adjust: 1em;
 	color:black;
 	text-decoration: none;
 	padding: 1.5vw;
@@ -146,9 +150,9 @@ p{
 
 .home{
 	position: fixed;
-	left:-40%;
+	left:-70%;
 	height: 100%;
-	width: 180%;
+	width: 240%;
 	
 }
 
@@ -179,6 +183,39 @@ p{
   grid-template-areas: ". . ." ". . ." ". . ." ". . ." ". . ." ". . .";
   font-size: 2vw;
 }
-div{
-	padding: 0.4vw;
+
+.home{
+display: absolute;
+top:-20px;
+height: 110vh;
+
+}
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column-reverse;
+
+
+	}
+
+
+@media only screen and (min-width: 0px) and (min-height: 0px), (max-width: 800px) and (max-height: 800px){ 
+
+		.projimg{
+		width: 100%;
+		padding: 10px;
+	}
+}
+
+@media only screen and (min-width: 901px), (min-height: 901px){ 
+
+	.projimg{
+		width: 30%;
+		height: 30%;
+		padding: 10px;
+	}
+}
+@media (prefers-reduced-motion: reduce) {
 }
