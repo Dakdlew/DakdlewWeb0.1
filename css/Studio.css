@@ -8,12 +8,13 @@ html{
 nav{
 	display: grid;
 	justify-content: center;
+
 }
 
 
 li{
 	position: relative;
-	display: inline-block;
+	display: inline;
 	margin-top: 5%;
 
 }
@@ -166,7 +167,6 @@ textarea{
 	color:white;
 
 }
-
 .atex{
 	text-align: center;
 	font-weight: bolder;
@@ -175,7 +175,6 @@ textarea{
 
 .typetext{
 	font-weight: bolder;
-	font-size: 2.5vw;
 }
 
 .grid-container {
@@ -198,23 +197,165 @@ height: 110vh;
 	align-items: center;
 	justify-content: center;
 
-
+}
+.projimg{
+		width: 70vw;
+		height: auto;
 	}
 
-
-@media only all and(min-width: 100px){ 
+/*phone   520 x 568 - 411 x 823 */
+@media only all and (min-width: 320px){ 
+	.buttons{
+		display: none;
+	}
 
 	.projimg{
-		width: 10px;
-		height: 10px;
+		width: 100%;
+		height: 100%;
 		padding: 5px;
 	}
-}
-@media only all and (min-width: 501px){ 
 
+	.typetext{
+		font-size: 4vw;
+		line-height: 5.3vw;
+		font-weight: bolder;
+	}
+	p{
+		font-size: 5vw;
+	}
+	.info{
+		font-weight: bold; ;
+	}
+
+
+}
+
+
+/*phone orientation landscapre  */
+@media only all and (orientation: landscape){ 
+	.typetext{
+		width: 30%;
+		font-size: 3vw;
+		line-height: 4.3vw;
+		text-align: left;
+	}
+	p{
+		font-size: 3vw;
+	}
+	.info{
+		text-align:right;
+		font-weight:normal;
+	}
+	.stnd{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+
+
+	}
+	.bio{
+		text-align:justify;
+	}
+	
 	.projimg{
 		width: 30%;
 		height: 30%;
 		padding: 5px;
 	}
 }
+
+@media only all and (min-width: 1000px){ 
+
+	.typetext{
+		width: 30%;
+		font-size: 2vw;
+		line-height: 4.3vw;
+		text-align: left;
+	}
+	p{
+		font-size: 1.5vw;
+	}
+	.info{
+		text-align:right;
+		font-weight:normal;
+	}
+	.stnd{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+
+
+	}
+	.bio{
+		position: absolute;
+		left: 66vw;
+		top: 30vw;
+		text-align:left;
+		width:25vw;
+
+	}
+
+
+span{
+	font-size: 2em;
+}
+.container {
+	justify-content: left;
+}
+
+.carouselbox {
+  font-family: century-gothic, sans-serif;
+  display: block;
+  font-weight: bolder;
+  font-size: 2em;
+  position: relative;
+}
+
+.buttons{
+	position: absolute;
+	left:74vw;
+	top: 7vw ;
+	display: flex;
+	
+
+
+}
+.active {
+  height: 40vw;
+}
+
+.carouselbox button {
+  border: none;
+  visibility: block;
+  border-radius:100px;
+	border: 20px solid rgb(38, 35, 53);
+	background:rgb(38, 35, 53);
+	color:rgb(248, 242, 242);
+}
+.active button {
+  visibility: visible;
+
+} 
+
+.active li {
+  position: absolute;
+  opacity: 0;
+  transform: scale(0);
+  transition: 1s;
+}
+.active li.current {
+  pointer-events: auto;
+  opacity: 1;
+  transform: scale(1);
+}
+.projimg{
+		width: 70vw;
+		height: auto;
+	}
+
+}
+
+.navl{
+	display:inline-block;
+}
+
