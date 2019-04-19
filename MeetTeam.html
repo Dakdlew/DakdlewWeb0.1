@@ -1,32 +1,49 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<link rel = "stylesheet" href= "css/Reset.css"> 
-	<link rel = "stylesheet" href= "css/Studio.css"> 
-	<link rel="stylesheet" href="https://use.typekit.net/cuy5nea.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-	<title>MeetTheTeam</title>
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<link rel = "stylesheet" href= "css/Reset.css"> 
+		<link rel = "stylesheet" href= "css/Studio.css">
+		<link rel="stylesheet" href="https://use.typekit.net/cuy5nea.css">
+		<title>Submit Inquiry</title>
+		<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+		<title>MeetTheTeam</title>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+	</head>
+	
+	
 
 <body>
-	<header>
+	<div class="parallax">
+		<div class="content">
+		<header>
 		<nav>
-			<a class="skip" href = "#main">Skip to contents</a>
-			<ul>
-				<li class="navl"><a class="nav" href="Inquire.html">Inquire</a></li> 
-				<li class="navl"><a class="nav" href="Projects.html">Projects</a></li> 
-				<li class="navl"><a class="nav" href="OurStudio.html">Our Studio</a></li>
-				<li class="navl"><a class="currentP" href="MeetTeam.html">Meet The Team</a></li>
-				<li class="navl"><a class="nav" href="Contact.html">Contact Us</a></li>
-				<li class="navl"><a class="nav" href="index.html">Home</a></li>
-			</ul>
+			<a class="skip" href = #main>Skip to contents</a>
+			<img class="headimg" src = "images/HeadImg-06.png" alt = "background picture"/>
+			<div id= "navbar">
+				<a id="inquire" href="inquire.html">Inquire</a>
+				<div id="services" class="dropdown">
+			    <button style="color:white; background-color: #00239C; font-size: 20px;" class="dropbtn">Services
+			      <i class="fa fa-caret-down"></i>
+			    </button>
+			    <div class="dropdown-content">
+			    	<a href="services.html">Services</a>
+			      <a href="#">Brand Development</a>
+			      <a href="#">Mulltimedia Production</a>
+			      <a href="#">Graphic Design</a>
+			    </div>
+			  </div> 
+				<a id="studio" href="ourstudio.html">Our Studio</a>
+				<a id="currentpage" href="meetteam.html">Meet The Team</a>
+				<a id="contact" href="contact.html">Contact Us</a>
+				<a id="home" href="index.html">Home</a>
+			</div>
+			
 		</nav>
-		
+
 	</header>
-<div class="stnd">
+
 
 	<main id="main">
 		<h1 class="typetext">Meet The Team</h1>
@@ -34,42 +51,51 @@
 				Studio 1201 is composed of a couple pals that bumped heads on their educational journey. Some since the early days of highschool, others since the early days of college, living long days and long nights doing what we love.
 			</p>
 		<div>
-			<img class= "prop" src = "images/Dakp.png" alt="CTO PHOTOGRAPH" />
-			<img class= "prop" src = "images/Juanp.png" alt="CCO PHOTOGRAPH"/>
-				<p>Dakota Lewis<br>
+			<img class= "profile" src = "images/Dakp.png" alt="CTO PHOTOGRAPH" />
+			<img class= "profile" src = "images/Juanp.png" alt="CCO PHOTOGRAPH"/>
+				<div class="plex"><p>Dakota Lewis<br>
 				Co-Founder + CTO</p>
 				<p>Juan Marco<br>
-				Co-Founder + CCO</p>
+				Co-Founder + CCO</p></div>
 		</div>
 
 		<div>
-			<a><img class= "prop" src = "images/Samp.png" alt="CMO PHOTOGRAPH"/></a>
-			<img class= "prop" src = "images/Greenp.png" alt="COO PHOTOGRAPH"/>
-			<p>Sam Tiesworth<br>
+			<a><img class= "profile" src = "images/Samp.png" alt="CMO PHOTOGRAPH"/></a>
+			<img class= "profile" src = "images/Greenp.png" alt="COO PHOTOGRAPH"/>
+			<div class="plex"><p>Sam Tiesworth<br>
 			Co-Founder + CMO</p>
 			<p>Michael Greenberger<br>
 			Co-Founder + COO</p>
 		</div>
 
 		<div>
-			<img class= "prop" src = "images/Dylp.png" alt="dylan PHOTOGRAPH"/>
-			<img class= "prop" src = "images/Zhap.png" alt="zhang PHOTOGRAPH"/>
-			<p>Dylan Borowski<br>
+			<img class= "profile" src = "images/Dylp.png" alt="dylan PHOTOGRAPH"/>
+			<img class= "profile" src = "images/Zhap.png" alt="zhang PHOTOGRAPH"/>
+			<div class="plex"><p>Dylan Borowski<br>
 			Head of Spatial Design</p>
 			<p>Alex Zhang <br>
 			In-House Photographer</p>
 		</div>
 
 		<div class= "meTeam">
-			<img class= "prop" src = "images/Laurap.png" alt="laura PHOTOGRAPH"/>
+			<img class= "profile" src = "images/Laurap.png" alt="laura PHOTOGRAPH"/>
 
 			<p>Laura Rospigliosi
 			In-House Designer</p>
+			<br><br>
 		</div>
 
-
+<footer>
+	<span>
+		<p><br><h2>Studio_1201</h1><br><br>Design Consultancy<br><br>+ Creative Collective</p>
+		<br><br>
+		<p>s1201.info@gmail.com</p><br><br>
+	</span>
+</footer>
 	</main>
 
 </div>
 </body>
+
+<script src = "js/NavBar.js"></script>
 </html>

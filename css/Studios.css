@@ -1,0 +1,362 @@
+html{
+	font-family: century-gothic, sans-serif;
+	font-weight: light;
+	background-color:  rgb(248, 242, 242);
+}
+
+
+nav{
+	display: grid;
+	justify-content: center;
+
+}
+
+
+li{
+	position: relative;
+	display: inline;
+	margin-top: 5%;
+
+}
+
+
+*:focus{
+	border:1px orange;
+}
+
+
+h1 {
+	text-align: center;
+	font-weight: light;
+	font-size: 10vw;
+
+}
+h2 {
+	font-weight: lighter;
+	font-size: 3vw;
+}
+h3 {
+	font-weight: lighter;
+	font-size: 2vw;
+}
+
+img{
+	padding: 1vw;
+	width: 100%;
+}
+p{
+	font-weight: lighter;
+	font-size: 2vw;
+}
+a{
+	text-decoration: none;
+}
+
+h3 {
+	font-size:20%;
+}
+
+div{
+	padding: 0.4vw;
+}
+
+
+
+.skip{
+	position: absolute;
+	color:orange;
+	left: -2000px;
+	display: block;
+}
+
+.skip:focus{
+	border:1px solid black;
+	font-size: 2vw;
+	left:0%;
+	top: 10px;
+
+}
+
+.fancy{
+    color: green;
+    font-size: 12px;
+}
+
+.plain{
+   color: black;
+   font-size: 16px;
+
+}
+
+.hyli{
+	font-size: 18pt;
+}
+
+
+
+.prop{
+	width: 45%;
+	height: 45%;
+
+}
+
+label{
+	display: block;
+	padding: 1vh;
+}
+
+textarea{
+	margin: 20px;
+	display: block;
+}
+
+
+}
+
+
+.meTeam{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-left: 5%;
+	justify-content: space-around;
+	text-align: center;
+
+	}
+
+.stnd{
+	position: relative;
+	margin: 7%;
+}
+.projs{
+	font-size: 2.4vw;
+}
+.nav, .currentP{
+	display: flex;
+	font-weight: bolder;
+	font-size: 2.5vw;
+	font-size-adjust: 1em;
+	color:black;
+	text-decoration: none;
+	padding: 1.5vw;
+
+}
+.navbar:hover{
+	color: white;
+	background-color:rgb(38, 35, 53);
+}
+.currentP{
+	color: #ea0b00;
+}
+
+.home{
+	position: fixed;
+	left:-5%;
+	height: 110%;
+	width: 110%;
+	
+}
+
+.hometext{
+
+	display: grid;
+	position:relative;
+	bottom: -33vh;
+	color:white;
+
+}
+.atex{
+	text-align: center;
+	font-weight: bolder;
+	font-size: 3vw;
+}
+
+.typetext{
+	font-weight: bolder;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.25fr 1fr 0.75fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: ". . ." ". . ." ". . ." ". . ." ". . ." ". . .";
+  font-size: 2vw;
+}
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+
+}
+.projimg{
+		width: 70vw;
+		height: auto;
+	}
+#backdrop{
+	position: fixed;
+	left:-5%;
+	height: 110%;
+	width: 110%;
+	
+	image-rendering: pixelated;
+}
+/*phone   520 x 568 - 411 x 823 */
+@media only all and (min-width: 320px){ 
+	.buttons{
+		display: none;
+	}
+
+	.projimg{
+		width: 100%;
+		height: 100%;
+		padding: 5px;
+	}
+
+	.typetext{
+		font-size: 4vw;
+		line-height: 5.3vw;
+		font-weight: bolder;
+	}
+	p{
+		font-size: 5vw;
+	}
+	.info{
+		font-weight: bold; ;
+	}
+
+
+}
+
+
+/*phone orientation landscapre  */
+@media only all and (orientation: landscape){ 
+	.typetext{
+		width: 30%;
+		font-size: 3vw;
+		line-height: 4.3vw;
+		text-align: left;
+	}
+	p{
+		font-size: 3vw;
+	}
+	.info{
+		text-align:right;
+		font-weight:normal;
+	}
+	.stnd{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+
+
+	}
+	.bio{
+		text-align:justify;
+	}
+	
+	.projimg{
+		width: 30%;
+		height: 30%;
+		padding: 5px;
+	}
+}
+
+@media only all and (min-width: 1000px){ 
+
+	.typetext{
+		width: 30%;
+		font-size: 2vw;
+		line-height: 4.3vw;
+		text-align: left;
+	}
+	p{
+		font-size: 1.5vw;
+	}
+	.info{
+		text-align:right;
+		font-weight:normal;
+	}
+	.stnd{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+
+
+	}
+	.bio{
+		position: absolute;
+		left: 66vw;
+		top: 30vw;
+		text-align:left;
+		width:25vw;
+
+	}
+
+
+span{
+	font-size: 2em;
+}
+.container {
+	justify-content: left;
+}
+
+.carouselbox {
+  font-family: century-gothic, sans-serif;
+  display: block;
+  font-weight: bolder;
+  font-size: 2em;
+  position: relative;
+}
+
+.buttons{
+	position: absolute;
+	left:74vw;
+	top: 7vw ;
+	display: flex;
+	
+
+
+}
+.active {
+  height: 40vw;
+}
+
+.carouselbox button {
+  border: none;
+  visibility: block;
+  border-radius:100px;
+	border: 20px solid rgb(38, 35, 53);
+	background:rgb(38, 35, 53);
+	color:rgb(248, 242, 242);
+}
+.active button {
+  visibility: visible;
+
+} 
+
+.active li {
+  position: absolute;
+  opacity: 0;
+  transform: scale(0);
+  transition: 1s;
+}
+.active li.current {
+  pointer-events: auto;
+  opacity: 1;
+  transform: scale(1);
+}
+.projimg{
+		width: 70vw;
+		height: auto;
+	}
+
+}
+
+.navl{
+	display:inline-block;
+}
+
