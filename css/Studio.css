@@ -32,17 +32,7 @@ footer{
   text-align: center;
 }
 
-.container {
-  justify-content: left;
-}
 
-.carouselbox {
-  font-family: century-gothic, sans-serif;
-  display: block;
-  font-weight: bolder;
-  font-size: 2em;
-  position: relative;
-}
 .headimg {
   width: 95vw;
   margin-bottom: 2vh;
@@ -299,10 +289,10 @@ i{
   display: flex;
 }
 
+
+
 @media only all and (min-width: 320px){ 
-  .buttons{
-    display: none;
-  }
+
 
   .projimg{
     width: 100%;
@@ -310,17 +300,7 @@ i{
     padding: 5px;
   }
 
-  .typetext{
-    font-size: 4vw;
-    line-height: 5.3vw;
-    font-weight: bolder;
-  }
-  p{
-    font-size: 5vw;
-  }
-  .info{
-    font-weight: bold; ;
-  }
+
 
 
 }
@@ -328,15 +308,7 @@ i{
 
 /*phone orientation landscapre  */
 @media only all and (orientation: landscape){ 
-  .typetext{
-    width: 30%;
-    font-size: 3vw;
-    line-height: 4.3vw;
-    text-align: left;
-  }
-  p{
-    font-size: 3vw;
-  }
+
   .info{
     text-align:right;
     font-weight:normal;
@@ -353,23 +325,17 @@ i{
   }
   
   .projimg{
-    width: 30%;
-    height: 30%;
+    display: grid;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 20%;
+    height: 20%;
     padding: 5px;
   }
 }
 
 @media only all and (min-width: 1000px){ 
 
-  .typetext{
-    width: 30%;
-    font-size: 2vw;
-    line-height: 4.3vw;
-    text-align: left;
-  }
-  p{
-    font-size: 1.5vw;
-  }
   .info{
     text-align:right;
     font-weight:normal;
@@ -378,14 +344,111 @@ i{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+}
+
+}
 
 
+.container {
+  justify-content: left;
+}
+
+.carouselbox {
+  font-family: century-gothic, sans-serif;
+  display: block;
+  font-weight: bolder;
+  font-size: 2em;
+  position: relative;
+}
+
+.buttons{
+  position: relative;
+  margin-top: 2em;
+
+  
+
+
+}
+.active {
+  height: 40vw;
+}
+
+.carouselbox button {
+  border: none;
+  visibility: block;
+  border-radius:100px;
+  border: 20px solid rgb(38, 35, 53);
+  background:rgb(38, 35, 53);
+  color:rgb(248, 242, 242);
+}
+.active button {
+  visibility: visible;
+
+} 
+
+.active li {
+  position: absolute;
+  opacity: 0;
+  transform: scale(0);
+  transition: 1s;
+}
+.active li.current {
+  pointer-events: auto;
+  opacity: 1;
+  transform: scale(1);
+}
+.projimg{
+    width: 70vw;
+    height: auto;
   }
-  .bio{
-    position: absolute;
-    left: 66vw;
-    top: 30vw;
-    text-align:left;
-    width:25vw;
 
-  }
+}
+
+#container{
+  width: 700px;
+  height: auto;
+  margin: 5em auto;
+}
+
+/* Start CSS of the accordion */
+
+.accordion label {
+  display:block;
+  padding: 0 15px;
+  height: 3em;
+  cursor: pointer;
+}
+.accordion p {
+  padding: 10px;
+  opacity: 0;
+  display: none;
+  text-align: left;
+  margin: 0px;
+}
+#tm:checked ~ .hiddentext {
+  display: block;
+  opacity: 1;
+}
+input#tm {
+  display: none;
+  position: relative;
+}
+#tn:checked ~ .hiddentext {
+  display: block;
+  opacity: 1;
+}
+input#tn {
+  display: none;
+  position: relative;
+}
+#to:checked ~ .hiddentext {
+  display: block;
+  opacity: 1;
+}
+input#to {
+  display: none;
+  position: relative;
+}
+.arrow{
+  color: #666666;
+}
